@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiofy</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- normalize -->
+    <link rel="stylesheet" href="style/normalize.css">
+
+    <!-- main style -->
+    <link rel="stylesheet" href="style/main.css">
+
+</head>
+<body>
+    <div class="main-container">
+        <div class="scroll-to-top"><i class="fa-solid fa-chevron-up"></i></div>
+        <header class="main-header">
+            <div class="container">
+                <a href="/index.html" class="brand">
+                    <img src="img/favicon.png" alt="brand">
+                    <h3>Wiofy</h3>
+                </a>
+                <nav role="navigation" class="header-nav">
+                    <ul role="list" class="main-list">
+                        <li id="product-link" class="main-li"><a href="#products">Products</a><i id="toggle-icon-one" class="fa-solid fa-angle-down"></i>
+                            <ul class="category-list" role="list"></ul>
+                        </li>
+                        <li class="main-li"><a href="#faq">Faq's</a></li>
+                        <li id="contact-link" class="main-li"><a href="#contact">Contact</a><i id="toggle-icon-two" class="fa-solid fa-angle-down"></i>
+                            <ul class="contact-list" role="list">
+                                <li><a href="#contact" data-id="1">Reach Us</a></li>
+                                <li><a href="#contact" data-id="2">About Us</a></li>
+                                <li><a href="#contact" data-id="3">Find Us</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="icons">
+                    <div class="shopping-cart">
+                        <i class="fa-solid fa-cart-plus"></i>
+                        <span class="number-products">Cart(0)</span>
+                    </div>
+                    <div class="menu"><i class="fa-solid fa-bars"></i></div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="cart-container">
+                <header class="cart-header">
+                    <h3>My Cart</h3>
+                    <span class="close"><i class="fa-solid fa-xmark"></i></span>
+                </header>
+                <div class="cart"></div>
+            </div>
+            <div class="alerts"></div>
+            <div class="hero">
+                <div class="container">
+                    <div class="slider-controls">
+                        <span class="previous" id="prev"><i class="fa-solid fa-chevron-left"></i></span>
+                        <span class="next" id="next"><i class="fa-solid fa-chevron-right"></i></span>
+                    </div>
+                    <a href="#" class="slider">
+                            <div class="slider-one slide">
+                                <div class="slider-content">
+                                    <h1>Sale of the year!</h1>
+                                </div>
+                            </div>
+                            <div class="slider-two slide">
+                                <div class="slider-content">
+                                    <h1>Discover new glasses for summer!</h1>
+                                </div>
+                            </div>
+                            <div class="slider-three slide">
+                                <div class="slider-content">
+                                    <h1>More than expected!</h1>
+                                </div>
+                            </div>
+                    </a>
+                </div>
+            </div>
+            <section class="category">
+                <div class="container">
+                    <div class="content">
+                        <span class="special">Special for you</span>
+                        <h1>Here is the new collection to make you look beautiful!</h1>
+                    </div>
+                    <ul role="list" class="categories">
+                        <li class="sunglasses-category">
+                            <img src="img/sunglasses-cover.jpg" alt="sunglasses">
+                            <a data-type="sunglasses" id='category' class="category-link" href="#products">Discover<br>Sunglasses</a>
+                        </li>
+                        <li class="necklace-category">
+                            <img src="img/necklace-cover.jpg" alt="necklace">
+                            <a data-type="necklace" id='category' class="category-link" href="#products">All Necklaces</a>
+                        </li>
+                        <li class="trousers-category">
+                            <img src="img/trousers-cover.jpg" alt="trousers">
+                            <a data-type="trousers" id='category' class="category-link"  href="#products">Discover<br>Trousers</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="timer">
+                <div class="container">
+                    <div class="timer-content">
+                        <h1>Get <span>50% Off</span> Before It's too Late!</h1>
+                        <p></p>
+                    </div>
+                    <ul role="list" class="timer-count">
+                        <li div class="day">
+                            <span class="days">11</span>
+                            <p>days</p>
+                        </li>
+                        <li class="hour">
+                            <span class="hours">12</span>
+                            <p>hours</p>
+                        </li>
+                        <li class="minute">
+                            <span class="minutes">14</span>
+                            <p>mins</p>
+                        </li>
+                        <li class="second">
+                            <span class="seconds">09</span>
+                            <p>secs</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="products" id="products">
+                <div class="special-title"><h1>Products</h1></div>
+                <div class="container">
+                    <ul role="list" class="cate-btns"></ul>
+                    <div class="products-list"></div>
+                </div>
+            </section>
+            <section class="faq" id="faq">
+                <div class="container">
+                    <div class="special-title"><h1>FAQ's</h1></div>
+                <ul class="list-faq" role="list">
+                    <li class="faq-box">
+                        <div class="question">
+                            <div>How much money should I pay for delivery?</div>
+                            <span class="faq-icon"><i class="fa-solid fa-angle-down"></i></span>
+                        </div>
+                        <div class="answer">You don't have to pay for delivery. It's totally free!</div>
+                    </li>
+                    <li class="faq-box">
+                        <div class="question">
+                            <div>How many days should I wait before reaching you?</div>
+                            <span class="faq-icon"><i class="fa-solid fa-angle-down"></i></span>
+                        </div>
+                        <div class="answer">It is enough to wait 3-7 days for the delivery.</div>
+                    </li>
+                    <li class="faq-box">
+                        <div class="question">
+                            <div>Do you have refund policy?</div>
+                            <span class="faq-icon"><i class="fa-solid fa-angle-down"></i></span>
+                        </div>
+                        <div class="answer">Yes, we have.</div>
+                    </li>
+                </ul>
+                </div>
+            </section>
+
+            <section class="contact" id="contact">
+                <div class="container">
+                    <div class="special-title"><h1>contact Us</h1></div>
+                    <h3 class="buty-title">We'd love to hear from you!</h3>
+                    <div class="all">
+                        <ul class="list-buttons" role="list">
+                            <li ><button class="btn active" data-id="1">Reach Us</button></li>
+                            <li ><button class="btn" data-id="2">About Us</button></li>
+                            <li ><button class="btn" data-id="3">Find Us</button></li>
+                        </ul>
+                        <div class="reach-us active" data-id="1" id="contact-option">
+                            <div class="image"><img src="img/necklace-cover.jpg" alt="necklace cover"></div>
+                            <form action="POST" class="reach">
+                                <div class="one">
+                                    <label for="name">Your name</label>
+                                    <input required type="text" id="name" name="name" placeholder="Enter your name">
+                                </div>
+                                <div class="two">
+                                    <label for="email">Your email</label>
+                                    <input required type="email" id="email" name="email" placeholder="Enter your email">
+                                </div>
+                                <div class="three">
+                                    <label for="message">Your message</label>
+                                    <textarea required type="text" id="message" name="message" placeholder="Enter your message" ></textarea>
+                                </div>
+                                <button class="submit" type="submit">Submit</button>
+                            </form>
+                        </div>
+                         <div class="about-us" data-id="2" id="contact-option">
+                            <h4>Who are we?</h4>
+                            <P>We love making stuffs. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, exercitationem laborum, eaque aliquid rem delectus facilis eos culpa, accusantium maxime saepe magni voluptatem illum ut dicta quis quam reprehenderit. Maiores.<br>
+                                We love making stuffs. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, exercitationem laborum, eaque aliquid rem delectus facilis eos culpa.</P>
+                        </div>
+                        <div class="find-us" data-id="3" id="contact-option">
+                            <h4>Let's drink a coffee together!</h4>
+                            <div id="map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.6016950212793!2d-6.871161577552844!3d34.002763156360324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda76d4ebdb405f3%3A0xd9a0c90a75588de5!2sHealth%20Center%20Al%20Karma!5e0!3m2!1sen!2sma!4v1668284429372!5m2!1sen!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="page-footer">
+            <div class="container">
+                <img src="img/favicon.png" alt="footer logo">
+                <div>© <span class="year"></span> · Made with 💕 by hicham</div>
+            </div>
+        </footer>
+    </div>
+     <!-- font awsome -->
+    <script src="https://kit.fontawesome.com/a33dd227fd.js" crossorigin="anonymous"></script>    
+
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>
