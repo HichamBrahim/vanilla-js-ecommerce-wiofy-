@@ -7,7 +7,7 @@
 function Timer() {
     let counter = setInterval(handleTime,1000);
     function handleTime() {
-        let targetDate = new Date('2022/11/28');
+        let targetDate = new Date('2022/12/20');
         let dateNow = new Date();
         let duration = targetDate - dateNow ;
         let days = Math.floor(duration/(1000 * 60 * 60 * 24));
