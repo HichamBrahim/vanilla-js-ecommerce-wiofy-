@@ -21,8 +21,8 @@ const Product = {
                             <img src="${product.img}" alt="${product.title}">
                             <div class="product-infos">
                                 <h4 id="name">${product.title}</h4>
-                                <P id="desc">${product.desc}</P>
-                                <span id="price">$${product.price}</span>
+                                <span id="desc">${product.desc}</span>
+                                <strong id="price">$${product.price}</strong>
                             </div>
                             <div class='product-action'>
                                 ${check ? (`${check.update ? `
